@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Garduino</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+
+<body>
+  <h1 class="hidden">SQRoots merchandise website</h1>
+    <header>
+      <div id="top-section">
+        <img src="images/logo.png" alt="SQRoot logo">
+        <button id="button"></button>
+      </div>
+        <nav>
+          <h2 class="hidden">Main navigation</h2>
+          <ul id="burgerMenu">
+            <li id="about-link">about</li>
+            <li id="product-link">product</li>
+            <li id="features-link">features</li>
+            <li id="usage-link">usage</li>
+            <li id="contact-link">contact</li>
+          </ul>
+        </nav>
+    </header>
+
+    <div class="hidden" id="light-box-message">
+      <div>
+        <h2>Product<br>coming<br>soon!</h2>
+        <p id="light-box-msg-close">close</p>
+      </div>
+    </div>
+
+    <div id="main-img-section">
+      <div id="main-img-text">
+        <h2>ROOTS</h2>
+        <h2 class="rotate-90">THAT</h2>
+        <h2>ROCK</h2>
+      </div>
+      <img id="succulent-plant-main-img" src="images/main-img-plant.png" alt="Succulant pot">
+    </div>
+  <main>
+    <section class="wrapper" id="our-roots">
+      <h2 class="hidden">Our roots section</h2>
+      <article>
+        <h2>OUR ROOTS</h2>
+        <p>In 2018, on a cloudy Monday afternoon, four students in the Interactive Media Specialist program at Fanshawe College where chatting about their weekend. When the topic of houseplants oddly came up, they all discovered there wasn’t a single greenthumb in thier collect eight thumbs. Each of them had stories of buying plants with the best of intentions, only to be throwing out the shrivled remains a few weeks later. Collectively they put their heads together, and using thier mixed Graphic Design and Coding backgrounds developed SQRoot. An app and sensor combination that would be their surrogate green thumbs.</p>
+      </article>
+      <img id="circuit-roots-img" src="images/roots.png" alt="Digital Circuitry">
+    </section>
+
+    <section class="wrapper" id="product">
+      <h2 class="hidden">The Product section</h2>
+      <article>
+        <h2>THE PRODUCT</h2>
+        <img src="images/product.png" alt="SQRoot product concept">
+        <p>SQRoot is a wireless plant sensor disguised as a rock that actually alerts you when your plant needs more sun light, fertilizer or water. Making sure you never forget about your plants again! This natural looking sensor takes away the guess work, letting you know what your plants needs and when it needs it! SQRoot has a database of hundreds of different plants, and can be used over and over again with all types of plants in your home. </p>
+      </article>
+    </section>
+
+    <div id="feature-img-divider">
+      <div id="img-divider-inner-text">
+        <h2>OUR</h2><br>
+        <h2>FEATURES</h2><br>
+        <h2>ROCK</h2>
+      </div>
+    </div>
+
+    <section class="wrapper" id="features-section">
+      <h2>KEY FEATURES</h2>
+      <div class="key-features-circle" id="key-features-crl-1">
+        <div class="radial-progress">
+          <div class="circle">
+              <div class="mask full">
+                  <div class="fill"></div>
+              </div>
+              <div class="mask half">
+                  <div class="fill"></div>
+                  <div class="fill fix"></div>
+              </div>
+          </div>
+          <div class="inset"></div>
+        </div>
+        <p>25%</p>
+        <h3>MOISTURE</h3>
+      </div>
+      <div class="key-features-circle" id="key-features-crl-2">
+        <div class="radial-progress">
+          <div class="circle">
+              <div class="mask full">
+                  <div class="fill"></div>
+              </div>
+              <div class="mask half">
+                  <div class="fill"></div>
+                  <div class="fill fix"></div>
+              </div>
+          </div>
+          <div class="inset"></div>
+        </div>
+        <p>60%</p>
+        <h3>NUTRIENTS</h3>
+      </div>
+      <div class="key-features-circle" id="key-features-crl-3">
+        <div class="radial-progress">
+          <div class="circle">
+              <div class="mask full">
+                  <div class="fill"></div>
+              </div>
+              <div class="mask half">
+                  <div class="fill"></div>
+                  <div class="fill fix"></div>
+              </div>
+          </div>
+          <div class="inset"></div>
+        </div>
+        <p>50%</p>
+        <h3>LIGHT</h3>
+      </div>
+    </section>
+
+    <section class="wrapper" id="how-it-works">
+      <h2 class="hidden">How does it work section</h2>
+      <article>
+        <h2>HOW DOES IT WORK</h2>
+        <p>SQRoot is a powerful sensor that can track your plants sun exposure, PH levels and soil moisture. When it connects with your device (phone or tablet) it is able to access a database of plant profiles, which it then uses to ensure your plant is recieving everything it needs, and in the quantity it needs it. SQRoot will then send you notifications when it is time to attend to your plant. It doesn’t matter how much experience you have caring for plants, the app will walk you through your plants routine, giving you step by step instructions along the way. Keeping happy and healthy plants in your house has never been easier. Click the link below to order yours today!</p>
+        <button id="buy-now-btn">Buy Now</button>
+      </article>
+      <img src="images/lineartplant.svg" alt="Plant line art">
+    </section>
+
+    <section class="wrapper" id="contact">
+      <h2>TALK</h2><br><h2>TO US</h2>
+      <form class="wrapper" action="#">
+        <label for="input-name">Your Name</label><br>
+        <input type="text" required id="input-name"><br>
+        <label for="input-email">Your Email</label><br>
+        <input type="text" required id="input-email"><br>
+        <label for="input-message">Message</label><br>
+        <textarea required id="input-message"></textarea><br>
+        <input type="submit" value="Submit" id="submit">
+      </form>
+    </section>
+
+    <footer class="wrapper">
+      <h2>Follow our social media!</h2>
+      <nav id="social-media">
+        <h2 class="hidden">Footer social media icons</h2>
+        <ul>
+          <li><p class="fa fa-facebook"></p></li>
+          <li><p class="  fa fa-twitter"></p></li>
+          <li><p class="fa fa-instagram"></p></li>
+          <li><p class="fa fa-google-plus"></p></li>
+        </ul>
+      </nav>
+      <h2>Copyright&copy; SQRoot 2018</h2>
+    </footer>
+  </main>
+  <script src="js/greensock/TweenMax.min.js"></script>
+  <script src="js/greensock/ScrollToPlugin.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
