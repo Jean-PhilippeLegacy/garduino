@@ -1,0 +1,40 @@
+@media screen and (min-width: 768px) {
+  header #top-section {
+    height: 200px; }
+
+  header #top-section button {
+    margin-top: 35px;
+    height: 100px; }
+
+  header #top-section button.expanded {
+    margin-top: 35px;
+    height: 100px; }
+
+  header nav {
+    top: 200px; }
+
+  header #top-section img {
+    width: 50%; }
+
+  #our-roots article h2 {
+    font-size: 65px; }
+
+  #our-roots article p {
+    font-size: 35px; }
+
+  #product article h2 {
+    font-size: 65px; }
+
+  #product article p {
+    font-size: 35px; }
+
+  #features-section h2 {
+    font-size: 65px; }
+
+  #how-it-works article h2 {
+    font-size: 65px; }
+
+  #how-it-works article p {
+    font-size: 35px; } }
+
+/*# sourceMappingURL=tablet.css.map */
