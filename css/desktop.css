@@ -1,0 +1,7 @@
+@media screen and (min-width: 1024px) {
+  header nav ul {
+    display: block; }
+  header nav button {
+    display: none; } }
+
+/*# sourceMappingURL=desktop.css.map */
