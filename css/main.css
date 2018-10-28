@@ -17,7 +17,7 @@ body {
 
 main {
   background-color: white;
-  margin-top: 900px;
+  margin-top: 100vh;
 }
 
 .hidden {
@@ -34,13 +34,13 @@ main {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-column-gap: 30px;
-  padding: 0 25px;
+  padding: 0 55px;
 }
 
 #main-img-section {
   background-image: url("../images/top-bg.jpg");
-  margin-top: 100px;
-  height: calc(100vh - 200px);
+  margin-top: 300px;
+  height: 50vh;
   max-width: 1200px;
   width: 100%;
   background-size: cover;
@@ -50,26 +50,24 @@ main {
 }
 #main-img-section #main-img-text {
   position: absolute;
-  margin-top: 380px;
   margin-left: 25px;
-  bottom: 0px;
+  bottom: 13px;
   z-index: 2;
 }
 #main-img-section #main-img-text h2 {
   font-family: "arial-black", arial, sans-serif;
-  font-size: 55px;
+  font-size: 200px;
   color: #a6cfcc;
-  line-height: 47px;
+  line-height: 160px;
 }
 #main-img-section #main-img-text .rotate-90 {
   color: black;
-  font-size: 14px;
+  font-size: 45px;
   line-height: 0px;
   width: 30px;
   float: left;
-  padding-bottom: 18px;
   margin-right: -10px;
-  margin-top: 0px;
+  margin-top: 125px;
   max-height: 92px;
   /* Safari */
   -webkit-transform: rotate(-90deg);
@@ -84,39 +82,35 @@ main {
   transform-origin: right bottom;
 }
 #main-img-section #main-img-text h2:last-child {
-  font-size: 60px;
-  margin-left: 13px;
+  font-size: 230px;
+  margin-left: 40px;
 }
 #main-img-section #succulent-plant-main-img {
   position: absolute;
-  bottom: -50px;
-  right: -100px;
-  width: 200px;
+  bottom: -200px;
+  right: -300px;
+  width: 600px;
   z-index: -1;
 }
 
 header #top-section {
   position: fixed;
   top: 0;
+  width: 100%;
   max-width: 1200px;
   background-color: #46464a;
-  height: 100px;
+  height: 300px;
   display: inline-block;
   z-index: 100;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-column-gap: 30px;
-  padding: 0 25px;
-}
-header #top-section .helper {
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
 }
 header #top-section img {
   grid-column: span 2;
   margin: auto;
   max-width: 100%;
+  width: 60%;
 }
 header #top-section button {
   background-color: white;
@@ -125,20 +119,22 @@ header #top-section button {
   transition: all 400ms ease;
   grid-column: 4/5;
   width: 100%;
-  height: 100px;
+  height: 150px;
+  margin-top: 75px;
 }
 header #top-section button.expanded {
   background: url("../images/x_svg.svg") center no-repeat;
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
-  width: 100%;
-  height: 100px;
+  max-width: 100%;
+  height: 150px;
+  margin-top: 75px;
 }
 header nav {
   width: 1024px;
   max-width: 100%;
-  top: 100px;
+  top: 300px;
   position: fixed;
   z-index: 100;
 }
@@ -150,8 +146,9 @@ header nav ul li {
   font-family: "arial-black", arial, sans-serif;
   color: white;
   cursor: pointer;
-  padding: 12px;
+  padding: 32px;
   text-transform: uppercase;
+  font-size: 70px;
 }
 header nav ul li:nth-child(odd) {
   background-color: #68686a;
@@ -166,62 +163,66 @@ header nav ul.slideToggle {
 }
 
 #our-roots {
-  padding-top: 50px;
+  padding-top: 100px;
 }
 #our-roots article {
   grid-column: 1/-1;
 }
 #our-roots article h2 {
-  font-size: 25px;
+  font-size: 100px;
   color: #a6cfcc;
   font-family: "neutra", arial, sans-serif;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
 }
 #our-roots article p {
   font-family: "helvetica", arial, sans-serif;
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 50px;
+  line-height: 75px;
 }
 #our-roots img {
-  margin-top: 30px;
+  margin-top: 300px;
   position: relative;
-  right: 45px;
+  right: 75px;
   transition: all 600ms ease-out;
-  max-width: 140px;
+  width: 500px;
 }
 #our-roots img.scrolled {
-  right: 25px;
+  right: 55px;
 }
 
 #product {
-  margin-top: 50px;
+  margin-top: 300px;
 }
 #product article {
   display: contents;
 }
 #product article h2 {
   grid-column: 1/-1;
-  font-size: 25px;
+  font-size: 100px;
   color: #a6cfcc;
   font-family: "neutra", arial, sans-serif;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
 }
 #product article img {
-  margin: 30px auto;
+  margin: 150px auto;
   grid-column: 1/-1;
   max-width: 100%;
+  height: 600px;
   order: 3;
 }
 #product article p {
   grid-column: 1/-1;
   font-family: "helvetica", arial, sans-serif;
+  font-size: 50px;
+  line-height: 75px;
 }
 
 #feature-img-divider {
-  margin-top: 50px;
+  margin-top: 150px;
   background-image: url(../images/divider-mobile.jpg);
+  background-position: center;
   background-size: cover;
-  height: 160px;
+  height: 400px;
   position: relative;
 }
 #feature-img-divider #img-divider-inner-text {
@@ -235,29 +236,31 @@ header nav ul.slideToggle {
   text-transform: uppercase;
   font-family: "arial-black", arial, sans-serif;
   color: white;
-  font-size: 30px;
-  line-height: 2px;
+  font-size: 75px;
+  line-height: 40px;
 }
 #feature-img-divider h2:first-child {
-  font-size: 15px;
+  font-size: 40px;
+  line-height: 20px;
 }
 #feature-img-divider h2:last-child {
-  font-size: 56px;
-  line-height: 32px;
+  font-size: 140px;
+  line-height: 100px;
   color: black;
 }
 
 #features-section {
-  margin-top: 50px;
+  margin-top: 150px;
 }
 #features-section h2 {
-  font-size: 25px;
+  font-size: 100px;
   color: #a6cfcc;
   font-family: "neutra", arial, sans-serif;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
   grid-column: 1/-1;
 }
 #features-section .key-features-circle {
+  padding-top: 50px;
   grid-column: 1/-1;
   margin: auto;
   position: relative;
@@ -266,12 +269,12 @@ header nav ul.slideToggle {
   position: absolute;
   top: 0;
   margin: 50px 50px 10px 50px;
-  width: 120px;
-  height: 120px;
-  line-height: 120px;
+  width: 400px;
+  height: 400px;
+  line-height: 490px;
   text-align: center;
   font-family: "arial-black", arial, sans-serif;
-  font-size: 25px;
+  font-size: 100px;
 }
 #features-section .key-features-circle h3 {
   text-align: center;
@@ -280,14 +283,14 @@ header nav ul.slideToggle {
 }
 #features-section .key-features-circle .radial-progress {
   margin: 50px 50px 10px 50px;
-  width: 120px;
-  height: 120px;
+  width: 400px;
+  height: 400px;
   background-color: #46464a;
   border-radius: 50%;
 }
 #features-section .key-features-circle .radial-progress .circle .mask, #features-section .key-features-circle .radial-progress .circle .fill {
-  width: 120px;
-  height: 120px;
+  width: 400px;
+  height: 400px;
   position: absolute;
   border-radius: 50%;
 }
@@ -298,18 +301,18 @@ header nav ul.slideToggle {
   transition: transform 1s;
 }
 #features-section .key-features-circle .radial-progress .circle .mask {
-  clip: rect(0px, 120px, 120px, 60px);
+  clip: rect(0px, 400px, 400px, 200px);
 }
 #features-section .key-features-circle .radial-progress .circle .mask .fill {
-  clip: rect(0px, 60px, 120px, 0px);
+  clip: rect(0px, 200px, 400px, 0px);
   background-color: #a6cfcc;
 }
 #features-section .key-features-circle .radial-progress .inset {
-  width: 90px;
-  height: 90px;
+  width: 350px;
+  height: 350px;
   position: absolute;
-  margin-left: 15px;
-  margin-top: 15px;
+  margin-left: 25px;
+  margin-top: 25px;
   background-color: #fbfbfb;
   border-radius: 50%;
 }
@@ -384,32 +387,34 @@ header nav ul.slideToggle {
 }
 
 #how-it-works {
-  margin-top: 50px;
+  margin-top: 300px;
 }
 #how-it-works article {
   display: contents;
 }
 #how-it-works article h2 {
   grid-column: 1/-1;
-  font-size: 25px;
+  font-size: 100px;
   color: #a6cfcc;
   font-family: "neutra", arial, sans-serif;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
 }
 #how-it-works article p {
   grid-column: 1/-1;
   font-family: "helvetica", arial, sans-serif;
-  margin-bottom: 15px;
+  font-size: 50px;
+  line-height: 75px;
 }
 #how-it-works article button {
   grid-column: 2/4;
+  margin-top: 150px;
   border: none;
   background-color: #a7cecb;
   color: white;
   width: initial;
   border-radius: 20px;
-  height: 40px;
-  font-size: 20px;
+  height: 100px;
+  font-size: 75px;
   font-family: "neutra", arial, sans-serif;
 }
 #how-it-works img {
@@ -417,43 +422,47 @@ header nav ul.slideToggle {
 }
 
 #contact {
-  margin-top: 50px;
+  margin-top: 300px;
   background-color: #a6cfcc;
-  padding-top: 20px;
+  padding-top: 100px;
+  padding-bottom: 150px;
 }
 #contact h2 {
   grid-column: 1/-1;
   text-align: center;
   font-family: "arial-black", arial, sans-serif;
-  font-size: 44px;
+  font-size: 150px;
   color: white;
-  line-height: 37px;
+  line-height: 70px;
 }
 #contact h2:first-child {
   color: black;
-  font-size: 50px;
+  font-size: 170px;
 }
 #contact form {
-  margin-top: 20px;
+  margin-top: 100px;
   grid-column: 1/-1;
   font-family: "helvetica", arial, sans-serif;
 }
 #contact form label {
   grid-column: 1/-1;
+  font-size: 50px;
 }
 #contact form input, #contact form textarea, #contact form #submit {
-  margin-top: 5px;
+  margin-top: 25px;
   margin-bottom: 10px;
   max-width: 100%;
   border: none;
   border-radius: 10px;
-  height: 40px;
-  padding: 5px;
+  height: 100px;
+  padding: 25px;
   font-family: "helvetica", arial, sans-serif;
   grid-column: 1/-1;
+  font-size: 50px;
 }
 #contact form textarea {
-  height: 100px;
+  height: 400px;
+  margin-bottom: 50px;
 }
 #contact form #submit {
   background-color: white;
@@ -461,18 +470,23 @@ header nav ul.slideToggle {
   margin: 0 auto;
   grid-column: 2/4;
   width: 100%;
-  height: 35px;
+  height: 100px;
 }
 
 footer {
   background-color: #a6cfcc;
 }
 footer h2 {
-  margin-top: 50px;
+  margin-top: 150px;
   grid-column: 1/-1;
   text-align: center;
+  font-size: 50px;
   font-family: "neutra", arial, sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
+}
+footer h2:last-child {
+  font-size: 10px;
+  color: white;
 }
 footer nav {
   display: contents;
@@ -486,13 +500,14 @@ footer nav ul li {
   margin: 0 auto;
 }
 footer nav ul li p {
-  line-height: 40px !important;
+  line-height: 150px !important;
   color: #a6cfcc;
-  width: 40px;
-  height: 40px;
+  width: 150px;
+  height: 150px;
   background-color: white;
   border-radius: 100%;
   text-align: center;
+  font-size: 70px !important;
 }
 footer nav ul li p:hover {
   color: white;
@@ -510,8 +525,8 @@ footer nav ul li p:hover {
   top: 0;
 }
 #light-box-message div {
-  width: 200px;
-  height: 200px;
+  width: 600px;
+  height: 600px;
   background-color: #a6cfcc;
   margin: auto;
   margin-top: 20vh;
@@ -522,13 +537,14 @@ footer nav ul li p:hover {
   font-family: "arial-black", arial, sans-serif;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 40%;
+  padding-top: 30%;
+  font-size: 60px;
 }
 #light-box-message div p {
   color: black;
   font-family: "helvetica", arial, sans-serif;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 40px;
   text-align: center;
   padding-top: 20px;
 }
@@ -536,23 +552,6 @@ footer nav ul li p:hover {
   cursor: pointer;
 }
 
-@media screen and (min-width: 360px) {
-  #main-img-section #main-img-text {
-    bottom: 4px;
-  }
-  #main-img-section #main-img-text h2 {
-    font-size: 70px;
-    line-height: 57px;
-  }
-  #main-img-section #main-img-text .rotate-90 {
-    margin-right: -20px;
-    line-height: 3px;
-  }
-  #main-img-section #main-img-text h2:last-child {
-    font-size: 80px;
-    margin-left: 13px;
-  }
-}
 @media screen and (min-width: 1024px) {
   header nav ul {
     display: block;
