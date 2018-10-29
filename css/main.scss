@@ -614,5 +614,10 @@ footer{
     }
 }
 
-@import 'tablet';
-@import 'desktop';
+@media only screen and (min-width:768px){
+    @import 'tablet';
+}
+
+@media only screen and (min-width:1024px){
+    @import 'desktop';
+}
