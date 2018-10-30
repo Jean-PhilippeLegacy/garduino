@@ -59,22 +59,52 @@
     }
 
     function scrollTo(e){
-        console.log(e.target.id);
+        console.log(screen.width);
         hamburgerMenu();
         if(e.target.id == 'about-link'){
-            TweenMax.to(window, 1, {scrollTo:{y:"#our-roots", offsetY:100}});
+            if(screen.width >= 768){
+                TweenMax.to(window, 1, {scrollTo:{y:"#our-roots", offsetY:150}});
+            }else if(screen.width >= 1024){
+                TweenMax.to(window, 1, {scrollTo:{y:"#our-roots", offsetY:0}});
+            }else if(screen.width < 768){
+                TweenMax.to(window, 1, {scrollTo:{y:"#our-roots", offsetY:100}});
+            }
         }
         if(e.target.id == 'product-link'){
-            TweenMax.to(window, 1, {scrollTo:{y:"#product", offsetY:150}});
+            if(screen.width >= 768){
+                TweenMax.to(window, 1, {scrollTo:{y:"#product", offsetY:200}});
+            }else if(screen.width >= 1024){
+                TweenMax.to(window, 1, {scrollTo:{y:"#product", offsetY:50}});
+            }else if(screen.width < 768){
+                TweenMax.to(window, 1, {scrollTo:{y:"#product", offsetY:150}});
+            }
         }
         if(e.target.id == 'features-link'){
-            TweenMax.to(window, 1, {scrollTo:{y:"#feature-img-divider", offsetY:100}});
+            if(screen.width >= 768){
+                TweenMax.to(window, 1, {scrollTo:{y:"#feature-img-divider", offsetY:150}});
+            }else if(screen.width >= 1024){
+                TweenMax.to(window, 1, {scrollTo:{y:"#feature-img-divider", offsetY:0}});
+            }else if(screen.width < 768){
+                TweenMax.to(window, 1, {scrollTo:{y:"#feature-img-divider", offsetY:100}});
+            }
         }
         if(e.target.id == 'usage-link'){
-            TweenMax.to(window, 1, {scrollTo:{y:"#how-it-works", offsetY:150}});
+            if(screen.width >= 768){
+                TweenMax.to(window, 1, {scrollTo:{y:"#how-it-works", offsetY:200}});
+            }else if(screen.width >= 1024){
+                TweenMax.to(window, 1, {scrollTo:{y:"#how-it-works", offsetY:50}});
+            }else if(screen.width < 768){
+                TweenMax.to(window, 1, {scrollTo:{y:"#how-it-works", offsetY:150}});
+            }
         }
         if(e.target.id == 'contact-link'){
-            TweenMax.to(window, 1, {scrollTo:{y:"#contact", offsetY:100}});
+            if(screen.width >= 768){
+                TweenMax.to(window, 1, {scrollTo:{y:"#contact", offsetY:150}});
+            }else if(screen.width >= 1024){
+                TweenMax.to(window, 1, {scrollTo:{y:"#contact", offsetY:0}});
+            }else if(screen.width < 768){
+                TweenMax.to(window, 1, {scrollTo:{y:"#contact", offsetY:100}});
+            }
         }
     }
 
