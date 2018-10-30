@@ -41,6 +41,10 @@ main {
     padding: 0 55px;
 }
 
+.webLogo{
+  display: none;
+}
+
 #main-img-section {
     background-image:url('../images/top-bg.jpg');
     margin-top:300px;
@@ -310,7 +314,7 @@ header{
             $circle-size: 400px;
             $circle-background: $dark;
             $circle-color: #a6cfcc;
-            $inset-size: 350px;
+            $inset-size: 350px; /*Change 50px*/
             $inset-color: #fbfbfb;
             $transition-length: 1s;
             $shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
@@ -617,6 +621,7 @@ footer{
 @media only screen and (min-width:768px){
     @import 'tablet';
 }
+
 
 @media only screen and (min-width:1024px){
     @import 'desktop';
