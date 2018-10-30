@@ -41,6 +41,10 @@ main {
     padding: 0 25px;
 }
 
+.webLogo{
+  display: none;
+}
+
 #main-img-section {
     background-image:url('../images/top-bg.jpg');
     margin-top:100px;
@@ -625,6 +629,7 @@ footer{
 @media only screen and (min-width:768px){
     @import 'tablet';
 }
+
 
 @media only screen and (min-width:1024px){
     @import 'desktop';
