@@ -115,9 +115,9 @@ header #top-section button {
   border: none;
   transition: all 400ms ease;
   grid-column: 4/5;
-  width: 100%;
   height: 50px;
-  margin-top: 25px;
+  width: 50px;
+  margin: 25px auto 0px auto;
 }
 header #top-section button.expanded {
   background: url("../images/x_svg.svg") center no-repeat;
@@ -126,7 +126,8 @@ header #top-section button.expanded {
   transform: rotate(90deg);
   max-width: 100%;
   height: 30px;
-  margin-top: 35px;
+  width: 30px;
+  margin: 35px auto 0px auto;
 }
 header nav {
   width: 100%;
@@ -243,6 +244,7 @@ header nav ul.slideToggle {
 
 #features-section {
   margin-top: 100px;
+  padding: 0px;
 }
 #features-section h2 {
   font-size: 40px;
@@ -250,6 +252,7 @@ header nav ul.slideToggle {
   font-family: "neutra", arial, sans-serif;
   margin-bottom: 50px;
   grid-column: 1/-1;
+  padding: 0 25px;
 }
 #features-section .key-features-circle {
   padding-top: 50px;
@@ -406,7 +409,7 @@ header nav ul.slideToggle {
   width: initial;
   border-radius: 10px;
   height: 50px;
-  font-size: 25px;
+  font-size: 15px;
   font-family: "neutra", arial, sans-serif;
 }
 #how-it-works img {
@@ -425,7 +428,7 @@ header nav ul.slideToggle {
   font-family: "arial-black", arial, sans-serif;
   font-size: 50px;
   color: white;
-  line-height: 55px;
+  line-height: 34px;
 }
 #contact h2:first-child {
   color: black;
@@ -462,9 +465,10 @@ header nav ul.slideToggle {
   grid-column: 2/4;
   width: 100%;
   height: 50px;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 50px;
   padding: 0px;
+  font-family: "neutra", arial, sans-serif;
 }
 
 footer {
