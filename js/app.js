@@ -33,10 +33,10 @@
     }
 
     function scrollFunction(){
-        var rootDifference = rootsImg.getBoundingClientRect().top - window.innerHeight + 300;
-        var crl1Difference = crl1.getBoundingClientRect().top - window.innerHeight + 300;
-        var crl2Difference = crl2.getBoundingClientRect().top - window.innerHeight + 300;
-        var crl3Difference = crl3.getBoundingClientRect().top - window.innerHeight + 300;
+        var rootDifference = rootsImg.getBoundingClientRect().top - window.innerHeight + 100;
+        var crl1Difference = crl1.getBoundingClientRect().top - window.innerHeight + 100;
+        var crl2Difference = crl2.getBoundingClientRect().top - window.innerHeight + 100;
+        var crl3Difference = crl3.getBoundingClientRect().top - window.innerHeight + 100;
 
         if(rootDifference < 0){
             rootsImg.classList = "scrolled";
@@ -62,19 +62,19 @@
         console.log(e.target.id);
         hamburgerMenu();
         if(e.target.id == 'about-link'){
-            TweenMax.to(window, 1, {scrollTo:{y:"#our-roots", offsetY:300}});
+            TweenMax.to(window, 1, {scrollTo:{y:"#our-roots", offsetY:100}});
         }
         if(e.target.id == 'product-link'){
-            TweenMax.to(window, 1, {scrollTo:{y:"#product", offsetY:350}});
+            TweenMax.to(window, 1, {scrollTo:{y:"#product", offsetY:150}});
         }
         if(e.target.id == 'features-link'){
-            TweenMax.to(window, 1, {scrollTo:{y:"#feature-img-divider", offsetY:300}});
+            TweenMax.to(window, 1, {scrollTo:{y:"#feature-img-divider", offsetY:100}});
         }
         if(e.target.id == 'usage-link'){
-            TweenMax.to(window, 1, {scrollTo:{y:"#how-it-works", offsetY:350}});
+            TweenMax.to(window, 1, {scrollTo:{y:"#how-it-works", offsetY:150}});
         }
         if(e.target.id == 'contact-link'){
-            TweenMax.to(window, 1, {scrollTo:{y:"#contact", offsetY:300}});
+            TweenMax.to(window, 1, {scrollTo:{y:"#contact", offsetY:100}});
         }
     }
 
